@@ -22,8 +22,6 @@ line in the code column.
 The given module name then becomes available for ordinary imports in the other code columns.
 E.g.
 
-<img src="https://www.salabim.org/anacondacode/anacondacode_manual.png" width=800 align=left>
-
-
+<img src="https://www.salabim.org/anacondacode/anacondacode_manual.png" width=900 align=left>
 
 The global variable `output` can be used to return an accepted value to the sheet (in this case a list of tuples).
