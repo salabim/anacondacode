@@ -1,4 +1,4 @@
-### anacondacode
+### <img src="https://www.salabim.org/anacondacode/anacondacode_logo.png" align=left> anacondacode
 
 This module contains one function: `runner`
 
