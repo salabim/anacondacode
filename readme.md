@@ -24,4 +24,6 @@ E.g.
 
 <img src="https://www.salabim.org/anacondacode/anacondacode_manual.png" width=800 align=left>
 
+
+
 The global variable `output` can be used to return an accepted value to the sheet (in this case a list of tuples).
