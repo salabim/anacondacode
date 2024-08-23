@@ -22,6 +22,15 @@ line in the code column.
 The given module name then becomes available for ordinary imports in the other code columns.
 E.g.
 
-<img src="https://www.salabim.org/anacondacode/anacondacode_manual.png" width=900 align=left>
+<img src="https://www.salabim.org/anacondacode/anacondacode_poc.png" width=900 align=left>
 
 The global variable `output` can be used to return an accepted value to the sheet (in this case a list of tuples).
+
+You can download the above sheet at: www.salabim.org/anacondacode/anacondacode_poc.xlsx
+
+#### Installation
+Install the module `anacondacode` from PyPI as described in section 'Managing software packages' of https://docs.anaconda.com/excel/code/
+
+#### Disclaimer
+This module is in no way affiliated with Anaconda, Inc.
+
