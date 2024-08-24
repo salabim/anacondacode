@@ -28,6 +28,8 @@ The global variable `output` can be used to return an accepted value to the shee
 
 You can download the above sheet at: www.salabim.org/anacondacode/anacondacode_poc.xlsx
 
+For more this and more examples, see the samples folder in the anaconda repository (www.github.com/salabim/anacondacode).
+
 #### Installation
 Install the module `anacondacode` from PyPI as described in section 'Managing software packages' of https://docs.anaconda.com/excel/code/
 

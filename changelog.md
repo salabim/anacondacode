@@ -15,3 +15,6 @@ Initial version
 - Updated documentation
 - Added samples folder to the GitHub repository
 
+#### version 0.0.3 | 2024-08-24
+
+- 0.0.2 version was uploaded incorrectly

@@ -1,9 +1,20 @@
 # anacondacode
 
-__version__ = "0.0.2"
+__version__ = "0.0.3"
+import pandas as pd
+import numpy as np
 
-
-def runner(range):
+def runner(data):
+    """
+    Args:
+        data: reference to code to run
+        type: list of lists, pandas dataframe or numpy array
+    
+        usualy a REF into an Excel range
+        
+    Returns:
+        the global variable output. If this is not defined None
+    """
 
     import importlib.abc
     import sys
@@ -54,12 +65,12 @@ def runner(range):
         sys.meta_path.append(StringFinder(StringLoader({module_name: source})))
 
     regex = re.compile(r"(?i)#\s*module\s*=\s*(\w+)")
-    if isinstance(range,pd.DataFrame):
-        range = range.values.tolist()
-    elif isinstance(range,np.ndarray):
-        range=range.tolist()
+    if isinstance(data,pd.DataFrame):
+        data = data.values.tolist()
+    elif isinstance(data,np.ndarray):
+        data=data.tolist()
 
-    for column in zip(*range):
+    for column in zip(*data):
         module_name = None
         for line in column:
             if line is not None:
@@ -74,6 +85,16 @@ def runner(range):
             exec(source, globals())
 
     return globals().get("output")
+
+def remove_output():
+    """
+    only for pytest
+    """
+    if "output" in globals():
+        del globals()["output"]
+
+def main():
+    ...
 
 
 if __name__ == "__main__":
