@@ -10,5 +10,8 @@ Initial version
 - Added tests
 - Documenation updated
 
+#### version 0.0.2 | 2024-08-24
 
+- Updated documentation
+- Added samples folder to the GitHub repository
 
